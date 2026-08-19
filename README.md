@@ -1,8 +1,5 @@
 # learning-kubernetes
 Laboratório prático de estudos em Kubernetes, com fundamentos, workloads, networking, storage, segurança e GitOps.
-# Learning Kubernetes
-
-Laboratório de estudos e práticas em Kubernetes, explorando conceitos fundamentais, workloads, networking, storage, segurança e GitOps.
 
 ## 🎯 Objetivo
 
