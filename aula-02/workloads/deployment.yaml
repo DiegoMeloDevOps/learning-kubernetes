@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: nginx-deployment
+
+# especicações do deployment
+spec:
+    # quero que sempra exista 3
+    replicas: 3
+
+    # ele ira fazer a replica de todo o pod que contenha a label app:nginx
+    selector:
+        matchLabels:
+            app: nginx
+    # criando o modelo do pod , no caso atribuindo a tag que passamos acima
+    template:
+        metadata:
+            labels:
+                app: nginx
+    # especificações dos containers , nome do container e a imagem que ele ira usar juntamente com a versão da imagem
+        spec:
+            containers:
+             - name: nginx
+               image: nginx:latest
+
