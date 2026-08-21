@@ -1,0 +1,14 @@
+apiVersion: vi 
+kind: Loadbalancer
+metadata:
+  name: nginx-srvice-loadbalancer
+
+spec:
+  selector:
+    app: deployment-nginx
+
+  type: LoadBalancer
+
+  ports:  
+    - port: 80
+      targetPort: 80
