@@ -1,7 +1,7 @@
 apiVersion: vi 
 kind: Loadbalancer
 metadata:
-  name: nginx-srvice-loadbalancer
+  name: nginx-service-loadbalancer
 
 spec:
   selector:
